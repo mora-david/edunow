@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            background-color: #f9f9f9;
+            flex-direction: column;
+        }
+        .sidebar {
+            background: #004d61; /* Verde oscuro */
+            color: white;
+            padding: 1rem;
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            color: #ffd700; /* Dorado */
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .sidebar a:hover {
+            background: #003b48; /* Verde más oscuro */
+        }
+        .content {
+            margin-left: 250px;
+            padding: 1rem;
+            flex: 1;
+        }
+        .topbar {
+            background: #e3eff5; /* Azul claro */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .topbar .dropdown {
+            position: relative;
+        }
+        .topbar .dropdown button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #004d61; /* Verde oscuro */
+        }
+        .topbar .dropdown .menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            display: none;
+        }
+        .topbar .dropdown:hover .menu {
+            display: block;
+        }
+        .topbar .dropdown .menu a {
+            display: block;
+            padding: 0.8rem;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .topbar .dropdown .menu a:hover {
+            background: #f4f4f9;
+        }
+        .main-content {
+            padding: 2rem;
+            text-align: center;
+        }
+        .message {
+            background: #fff3cd; /* Amarillo claro */
+            padding: 1.5rem;
+            border-left: 4px solid #ffecb5; /* Amarillo más oscuro */
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .message h1 {
+            margin: 0;
+            color: #856404; /* Amarillo oscuro */
+        }
+        .message p {
+            color: #6c757d; /* Gris */
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 0.5rem;
+            }
+            .content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <a href="dashboard.html">Comunicados</a>
+        <a href="asignaturas.html">Asignaturas</a>
+        <a href="mantenimiento.html">Mis Pagos</a>
+        <a href="mantenimiento.html">Historial Académico</a>
+        <a href="mantenimiento.html">Conoce tu Escuela</a>
+        <a href="mantenimiento.html">Soporte</a>
+    </div>
+    <div class="content">
+        <div class="topbar">
+            <div class="dropdown">
+                <button>Mi Cuenta ⬇</button>
+                <div class="menu">
+                    <a href="#">Notificaciones</a>
+                    <a href="#">Mi Cuenta</a>
+                    <a href="login.html">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="message">
+                <h1>Sección en Mantenimiento</h1>
+                <p>Esta sección no está disponible por el momento. Por favor, inténtalo más tarde. Disculpa las molestias.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
